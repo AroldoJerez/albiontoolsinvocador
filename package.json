@@ -1,18 +1,20 @@
 {
   "name": "avalon-dungeon-decoder",
   "version": "1.0.0",
-  "bin": "./dist/app.js",
-  "description": "A simple CLI tool to decode responses of the Avalonian dungeon in Albion Online",
+  "type": "module",
+  "description": "Avalon Dungeon Decoder Web Tool",
   "scripts": {
-    "start": "nodemon",
-    "clean": "rimraf ./dist ./binary",
-    "build": "npm run clean && tsc",
-    "binary": "npm run build && npx pkg --target node18-win-x64 --output binary/chuny.exe dist/app.js"
+    "dev": "tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   },
   "devDependencies": {
+    "@types/express": "^5.0.6",
     "@types/node": "^22.13.4",
-    "nodemon": "^3.1.9",
-    "pkg": "^5.8.1",
     "rimraf": "^6.0.1",
     "tsx": "^4.19.3",
     "typescript": "^5.7.3"

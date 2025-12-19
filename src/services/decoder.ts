@@ -1,6 +1,7 @@
-import { Boss } from '../types/boss';
-import { bosses } from '../config/bosses';
-import { cleanText, hexToStr } from '../utils/text';
+import { Boss } from '../types/boss.js';
+import { bosses } from '../config/bosses.js';
+import { cleanText, hexToStr } from '../utils/text.js';
+
 
 export class DungeonDecoder {
   /**

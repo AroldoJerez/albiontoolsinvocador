@@ -1,4 +1,4 @@
-import { BossConfig } from '../types/boss';
+import { BossConfig } from '../types/boss.js';
 
 export const bosses: Record<string, BossConfig> = {
   construct: {

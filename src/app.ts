@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readline from 'readline';
-import { DungeonDecoder } from './services/decoder';
+import { DungeonDecoder } from './services/decoder.js';
 
 class AvalonDungeonDecoder {
   private rl: readline.Interface;
